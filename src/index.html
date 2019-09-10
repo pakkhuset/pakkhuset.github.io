@@ -3,12 +3,128 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Static HTML Site Boilerplate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PAKKHUSET</title>
 </head>
 
 <body>
-    <h1>Hello Static HTML!</h1>
-    <a href="/page.html">Link to my other page</a>
-    <img src="/static/tail.png" alt="code"/>
+    <div class="header">
+        <div class="header-banner">
+            <div class="header-logo"></div>
+            <div class="header-title">PAKKHUSET</div>
+        </div>
+        <div class="nav-bar">
+            <div class="nav-bar-link">ABOUT US</div>
+            <div class="nav-bar-link">GET IN TOUCH</div>
+            <div class="nav-bar-link">EVENT SPACES</div>
+        </div>
+    </div>
+
+    <div class="top-content">
+        <div class="big-logo"></div>
+        <div class="welcome-text">
+            welcome to<br/> PAKKHUSET OSLO
+        </div>
+    </div>
+
+    <div class="block-title bg-white pt-9 pb-19">
+        Pakkuset is
+    </div>
+
+    <div class="card-wrap bg-white pb-19">
+        <div class="card">
+            <div class="card-img-big" style="background-image: url('./static/bar&restaraunt.png')"></div>
+            <div class="card-title">BAR & RESTAURANT</div>
+            <div class="card-descriptions">
+                <span class="black">We have several different types of bars, an extensive beer menu, and even
+                    stone baked pizza! </span> <a>See what it's all about!</a> <span class="arrow-right dark-green"></span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img-big" style="background-image: url('./static/events.png')"></div>
+            <div class="card-title">EVENTS</div>
+            <div class="card-descriptions">
+                <span class="black">Pakkhuset provides the perfect backdrop for every event! </span>
+                <br/> <a>Check out our event spaces!</a> <span class="arrow-right dark-green"></span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img-big" style="background-image: url('./static/community.png')"></div>
+            <div class="card-title">COMMUNITY</div>
+            <div class="card-descriptions ">
+                <span class="black">Pakkhuset is home to a vibrant tech start up community </span>
+                <a>What's the vibe?</a> <span class="arrow-right dark-green"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="bt-wrap bg-white">
+        <div class="btn">GET IN TOUCH</div>
+    </div>
+
+    <div class="block-title bg-white pt-9 pb-4">
+        See what's up on our Instagram..
+    </div>
+
+    <div class="card-wrap bg-white">
+        <div class="card" >
+            <div class="card-img" style="background-image: url('./static/insta_4.png')"></div>
+        </div>
+        <div class="card" >
+            <div class="card-img" style="background-image: url('./static/insta_3.png')"></div>
+        </div>
+        <div class="card">
+            <div class="card-img" style="background-image: url('./static/insta_1.png')"></div>
+        </div>
+        <div class="card">
+            <div class="card-img" style="background-image: url('./static/insta_2.png')"></div>
+        </div>
+    </div>
+
+    <div class="block-title bg-white pt-12 pb-5">
+        ..and follow for updates
+    </div>
+
+    <div class="social-icon-wrap bg-white">
+        <div class="social-icon" style="background-image: url('./static/logo_sm.png')"></div>
+        <div class="social-icon" style="background-image: url('./static/logo_sm.png')"></div>
+    </div>
+
+    <div class="block-title bg-white pt-12 pb-12">
+        Best of all- come visit us!
+    </div>
+
+    <div class="map" id="map">
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-nav pt-14">
+            <a class="nav-link">AFTERWORK</a>
+            <a class="nav-link">BRUNCH</a>
+            <a class="nav-link">CHAMPAGNE BAR</a>
+            <a class="nav-link">EVENT SPACES</a>
+        </div>
+        <div class="footer-info pt-14">
+            <div class="pb-7">NEDRE SLOTTSGATE 2C</div>
+            <div >OPENING HOURS</div>
+            <div class="footer-info-text">TUESDAY-SATURDAY: 14:00-23:00</div>
+            <div class="footer-info-text">SUNDAY-MONDAY: closed</div>
+        </div>
+    </div>
+
+    <script>
+      function initMap() {
+        var oslo = {lat: 59.909594, lng: 10.740122};
+        var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 16, center: oslo});
+        var marker = new google.maps.Marker({
+          position: oslo,
+          map: map,
+          icon: "./static/logo_sm.png"
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDM17DRLHKr7lmNkYkYMivZU-Jllbqu20s &callback=initMap">
+    </script>
 </body>
