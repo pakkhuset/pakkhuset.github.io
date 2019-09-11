@@ -1,26 +1,6 @@
 @import "varibles";
 @import "helpers";
 
-@font-face {
-  font-family: 'Sofia Pro Bold';
-  src: url('../static/SofiaProBold.otf') format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Sofia Pro Black';
-  src: url('../static/SofiaProBlack.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Sofia Pro Medium';
-  src: url('../static/SofiaProMedium.otf');
-  font-weight: normal;
-  font-style: normal;
-}
 
 .mt-1 {margin-top: 10px}
 .mt-2 {margin-top: 20px}
@@ -133,6 +113,9 @@ body {
   &.dark-green {
     border-color: transparent transparent transparent $dark-green;
   }
+  &.light-green {
+    border-color: transparent transparent transparent $light-green;
+  }
 }
 
 .card-wrap {
@@ -179,6 +162,7 @@ body {
     font-size: 3rem;
     background-color: $cream;
     box-shadow: 5px 5px $light-green;
+    cursor: pointer;
   }
 }
 
@@ -224,4 +208,46 @@ body {
     font-size: 3rem;
     font-family: $font-medium;
   }
+}
+
+/*Bar and restaurant start*/
+
+.bar-and-restaurant {
+  .top-content {
+    background-image: url("../static/bar_and_rest_home.png");
+  }
+
+  .dont-decide {
+    color: $dark-green;
+    font-size: 3.5rem;
+  }
+  .card-wrap .card .card-title, .card-wrap .card .card-descriptions {
+    color: $light-green;
+  }
+}
+
+/*Bar and restaurant end*/
+
+
+
+
+@font-face {
+  font-family: 'Sofia Pro Bold';
+  src: url('../static/SofiaProBold.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro Black';
+  src: url('../static/SofiaProBlack.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro Medium';
+  src: url('../static/SofiaProMedium.otf');
+  font-weight: normal;
+  font-style: normal;
 }

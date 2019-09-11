@@ -16,6 +16,9 @@
 .pt-3 {padding-top: 30px!important}
 .pt-4 {padding-top: 40px!important}
 .pt-5 {padding-top: 50px!important}
+.pt-6 {padding-top: 60px!important}
+.pt-7 {padding-top: 70px!important}
+.pt-8 {padding-top: 80px!important}
 .pt-9 {padding-top: 90px!important}
 .pt-12 {padding-top: 120px!important}
 .pt-14 {padding-top: 140px!important}
@@ -24,7 +27,10 @@
 .pb-3 {padding-bottom: 30px!important}
 .pb-4 {padding-bottom: 40px!important}
 .pb-5 {padding-bottom: 50px!important}
+.pb-6 {padding-bottom: 60px!important}
 .pb-7 {padding-bottom: 70px!important}
+.pb-8 {padding-bottom: 80px!important}
+.pb-9 {padding-bottom: 90px!important}
 .pb-12 {padding-bottom: 120px!important}
 .pb-14 {padding-bottom: 140px!important}
 .pb-19 {padding-bottom: 190px!important}
@@ -35,4 +41,9 @@
 a {
   text-decoration: underline;
   cursor: pointer;
+  &:visited {
+    color: inherit;
+  }
 }
+.text-center { text-align: center !important;}
+.width-100 { width: 100%;}
