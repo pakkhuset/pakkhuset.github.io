@@ -228,7 +228,41 @@ body {
 
 /*Bar and restaurant end*/
 
+/*Events start*/
 
+.events {
+  .top-content {
+    background-image: url("../static/events_home.png");
+  }
+
+  .event-gallery-wrap {
+    padding: 0 130px;
+    .event-gallery {
+      height: 960px;
+    }
+  }
+
+  .card-wrap .card .card-title, .card-wrap .card .card-descriptions {
+    color: $light-green;
+  }
+}
+
+/*Events end*/
+
+
+/*galleriet start*/
+
+.galleriet {
+  .top-content {
+    background-image: url("../static/events_home.png");
+  }
+
+  .card-wrap .card .card-title, .card-wrap .card .card-descriptions {
+    color: $light-green;
+  }
+}
+
+/*galleriet end*/
 
 
 @font-face {
