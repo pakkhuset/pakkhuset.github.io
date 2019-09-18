@@ -251,12 +251,183 @@ body {
 
 
 /*galleriet start*/
-
-.galleriet {
-  .top-content {
-    background-image: url("../static/events_home.png");
+.gallery-view {
+  display: flex;
+  height: 960px;
+  position: relative;
+  .main-image {
+    background-image: url("../static/events_galary1.png");
+    background-size: cover;
+    height: 100%;
+    width: 70%;
   }
+  .sub-images {
+    margin-left: 10px;
+    width: calc(30% - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .sub-image {
+      height: calc(50% - 5px);
+      background-size: cover;
+      width: 100%;
+    }
+  }
+  .see-all-btn {
+    position: absolute;
+    bottom: 25px;
+    right: 35px;
+    padding: 20px 35px 25px;
+    color: white;
+    cursor: pointer;
+    &:before {
+      content: " ";
+      background-color: white;
+      opacity: 0.7;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
 
+.floor-plan-header {
+  display: flex;
+  padding: 30px 130px;
+  justify-content: space-between;
+  align-items: center;
+  &-images {
+    display: flex;
+    align-items: center;
+    .image-block {
+      text-align: center;
+      margin-left: 70px;
+      font-size: 2rem;
+      font-family: $font-medium;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .floor-plan-header-img {
+        background-size: cover;
+        width: 70px;
+        height: 50px;
+      }
+      .floor-plan-header-text {
+        padding-top: 10px;
+        max-width: 160px;
+      }
+    }
+  }
+}
+
+.floor-plan {
+  padding: 0 130px;
+  display: flex;
+  justify-content: space-between;
+  .info-blocks {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    .info-block {
+      padding-bottom: 40px;
+      padding-top: 25px;
+      border-bottom: 2px solid $bg-cream;
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      .title {
+        padding-bottom: 15px;
+        font-size: 4rem;
+        color: $dark-green;
+      }
+      .text{
+        font-size: 2.8rem;
+        font-family: $font-medium;
+        color: black;
+      }
+    }
+  }
+  .floor-image {
+    width: 50%;
+    margin: 115px 0 150px 200px;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    &-text {
+      font-size: 2.8rem;
+      position: absolute;
+      color: $dark-green;
+      bottom: -30px;
+      width: 100%;
+    }
+  }
+}
+
+.text-image-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 130px 50px;
+
+  > * {
+    width: calc(50% - 20px);
+  }
+  .text {
+    font-family: $font-medium;
+    .title {
+      font-family: $font-black;
+    }
+  }
+  .image {
+    background-size: cover;
+    height: 520px;
+  }
+}
+.border {
+  padding: 0 130px;
+  background-color: white;
+  div {
+    width: 100%;
+    height: 2px;
+    background-color: $bg-cream;
+  }
+}
+
+.gallery-viewer{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 100px 240px;
+  background-color: rgba(0, 0, 0, 0.6);
+  &-images {
+    position: relative;
+    height: 100%;
+    padding: 10px;
+    background-color: $cream;
+    .close-gallery {
+      position: absolute;
+      top: 45px;
+      right: 65px;
+      color: $cream;
+      cursor: pointer;
+      font-size: 55px;
+      z-index: 9;
+      height: 20px;
+      line-height: 0;
+    }
+  }
+  #jssor_1 > div:first-child  div, #jssor_1 > div:first-child  img {
+    width: 100%!important;
+  }
+  #jssor_1 > div:nth-last-child(-n+2) {
+    top: calc(50% - 25px)!important;
+  }
+}
+.galleriet {
   .card-wrap .card .card-title, .card-wrap .card .card-descriptions {
     color: $light-green;
   }

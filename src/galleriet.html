@@ -9,43 +9,105 @@
 
 <body class="galleriet">
     <div class="header">
-        <div class="header-banner">
+        <a href="/" class="header-banner simple">
             <div class="header-logo"></div>
             <div class="header-title">PAKKHUSET</div>
-        </div>
+        </a>
         <div class="nav-bar">
             <div class="nav-bar-link">ABOUT US</div>
             <div class="nav-bar-link">GET IN TOUCH</div>
-            <div class="nav-bar-link">EVENT SPACES</div>
+            <div class="nav-bar-link"><a class="simple" href="events.html">EVENT SPACES</a></div>
         </div>
     </div>
 
-    <div class="top-content text-center">
-        <div class="welcome-text width-100">
-            EVENTS
+
+    <div class="gallery-view bg-white">
+        <div class="main-image"></div>
+        <div class="sub-images">
+            <div class="sub-image" style="background-image: url('./static/events_galary1.png')"></div>
+            <div class="sub-image" style="background-image: url('./static/events_galary1.png')"></div>
+        </div>
+        <div class="see-all-btn font-28" onclick="showGallery()"><span>See all photos </span> </div>
+    </div>
+
+    <div class="floor-plan-header bg-white">
+        <div class="font-80 dark-green">GALLERIET</div>
+        <div class="floor-plan-header-images">
+            <div class="image-block">
+                <div class="floor-plan-header-img" style="background-image: url('./static/equipped_for_corp.png')"></div>
+                <div class="floor-plan-header-text">Equipped for corporate events </div>
+            </div>
+            <div class="image-block">
+                <div class="floor-plan-header-img" style="background-image: url('./static/stocked_bar.png')"></div>
+                <div class="floor-plan-header-text">Fully stocked bar available</div>
+            </div>
+            <div class="image-block">
+                <div class="floor-plan-header-img" style="background-image: url('./static/catering.png')"></div>
+                <div class="floor-plan-header-text">Catering  available</div>
+            </div>
+            <div class="image-block">
+                <div class="floor-plan-header-img" style="background-image: url('./static/trained_staff.png')"></div>
+                <div class="floor-plan-header-text">Trained staff and tech support</div>
+            </div>
         </div>
     </div>
 
-    <div class="block-title bg-white dark-green font-80 pt-7 pb-3">
-        Host your event <br/> with us!
+    <div class="border "><div></div></div>
+
+    <div class="floor-plan bg-white">
+        <div class="info-blocks">
+            <div class="info-block">
+                <div class="title">ABOUT THE SPACE</div>
+                <div class="text">Perhaps our most versatile space, well
+                    equipped for everything from large
+                    scale conferences, parties with a lively
+                    dance floor to dinner parties. </div>
+            </div>
+            <div class="info-block">
+                <div class="title">PERFECT FOR </div>
+                <div class="text">Conference, julebord, art exhibition,
+                    dance party, corporate party, book or
+                    product launch</div>
+            </div>
+            <div class="info-block">
+                <div class="title">CAPACITY: 50-250ppl </div>
+            </div>
+        </div>
+        <div class="floor-image" style="background-image: url('./static/floor_plan.png')">
+            <div class="floor-image-text">Floor plan, Galleriet</div>
+        </div>
     </div>
 
-    <div class="block-title bg-white dark-green font-35 pb-10">
-        We have several versatile event spaces, <br/>
-        fit to host anything - from an intimate party, <br/>
-        art exhibition, to large conferences!
+    <div class="text-image-block bg-white">
+        <div class="image" style="background-image: url('./static/barmens.png')"></div>
+        <div class="text font-28">Our event in Galleriet went off without a hitch! The staff was helpful and resourceful and our evening was a great experience. </div>
     </div>
 
-    <div class="bg-white event-gallery-wrap">
-        <div class="event-gallery"></div>
+    <div class="border"><div></div></div>
+
+    <div class="text-image-block bg-white">
+        <div class="text">
+            <div class="title font-40 dark-green pb-2">FOOD FOR YOUR EVENT</div>
+            <div class="font-28">
+                Wether your event requires PePerhaps our most versatile space, well equipped for everything from large scale conferences, parties with a lively dance floor to dinner parties.
+                <br/><br/>
+                Perhaps our most versatile space, well equipped for everything from large scale conferences, parties with a lively dance floor to dinner parties. rhaps our most versatile space, well equipped for everything from large scale conferences, parties with a lively dance floor to dinner parties
+            </div>
+        </div>
+        <div class="image" style="background-image: url('./static/food_table.png')"></div>
     </div>
 
-    <div class="block-title bg-white dark-green font-80 pt-19 pb-10">
-        OUR SPACES
+    <div class="border"><div></div></div>
+
+    <div class="text-image-block bg-white">
+        <div class="image" style="background-image: url('./static/two_mens.png')"></div>
+        <div class="text">
+            <div class="title font-40 dark-green pb-2">THE EQUIMPMENT YOU NEED </div>
+            <div class="font-28">Wether your event requires PePerhaps our most versatile space, well equipped for everything from large scale conferences, parties with a lively dance floor to dinner parties.
+                <br/><br/>
+                Perhaps our most versatile space, well equipped for everything from large scale conferences, parties with a lively dance floor to dinner parties. rhaps our most versatile space, well equipped for everything from large scale conferences, parties with a lively dance floor to dinner parties. </div>
+        </div>
     </div>
-
-
-
 
     <div class="block-title bg-white dark-green font-35 pt-14">
         Get in touch for more information!<br>
@@ -110,4 +172,91 @@
         </div>
     </div>
 
+
+
+    <div id="gallery-viewer" class="gallery-viewer hidden">
+        <script type="text/javascript">
+          function docReady(fn) {
+            if (document.readyState === "complete" || document.readyState === "interactive") {
+              // call on next available tick
+              setTimeout(fn, 1);
+            } else {
+              document.addEventListener("DOMContentLoaded", fn);
+            }
+          }
+          jssor_1_slider_init = function() {
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $Idle: 3000,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: false,
+                $Breaks: [
+                  [{d:2000,b:1000}]
+                ]
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            return jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+          };
+          // docReady(jssor_1_slider_init);
+        </script>
+        <div class="gallery-viewer-images">
+            <div class="close-gallery" onclick="hideGallery()">&times;</div>
+            <div id="jssor_1" class="height-100" style="position:relative;top:0px;left:0px;height:960px;overflow:hidden;visibility:hidden;">
+                <!-- Loading Screen -->
+                <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                </div>
+                <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;height:100%;overflow:hidden;">
+                    <div data-p="170">
+                        <img data-u="image" src="static/events_galary1.png" />
+                    </div>
+                    <div data-p="170">
+                        <img data-u="image" src="static/events_galary1.png" />
+                    </div>
+                    <div data-p="170">
+                        <img data-u="image" src="static/events_galary1.png" />
+                    </div>
+                    <div data-p="170">
+                        <img data-u="image" src="static/events_galary1.png" />
+                    </div>
+                </div>
+                <!-- Bullet Navigator -->
+                <div data-u="navigator" class="jssorb052" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                    <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                        </svg>
+                    </div>
+                </div>
+                <!-- Arrow Navigator -->
+                <div data-u="arrowleft" class="jssora053" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                    </svg>
+                </div>
+                <div data-u="arrowright" class="jssora053" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      var slider;
+        function showGallery() {
+          document.getElementById("gallery-viewer").classList.remove("hidden");
+          if (!slider) {slider = jssor_1_slider_init()};
+        }
+        function hideGallery() {
+          document.getElementById("gallery-viewer").classList.add("hidden");
+        }
+    </script>
 </body>
