@@ -370,9 +370,40 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 60px 130px 50px;
+  height: 520px;
 
   > * {
     width: calc(50% - 20px);
+  }
+  .quoted-text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    > div {
+      position: relative;
+      &:before {
+        position: absolute;
+        left: 49%;
+        top: -50px;
+        content: " ";
+        width: 20px;
+        height: 20px;
+        background-color: $bg-cream;
+        transform: rotate(45deg);
+      }
+      &:after {
+        position: absolute;
+        left: 49%;
+        bottom: -50px;
+        content: " ";
+        width: 20px;
+        height: 20px;
+        background-color: $bg-cream;
+        transform: rotate(45deg);
+      }
+    }
   }
   .text {
     font-family: $font-medium;
@@ -382,7 +413,6 @@ body {
   }
   .image {
     background-size: cover;
-    height: 520px;
   }
 }
 .border {
@@ -434,6 +464,17 @@ body {
 }
 
 /*galleriet end*/
+
+/*nedree-slot start*/
+.nedree-slot {
+  .floor-plan-header-images .image-block {
+    margin-left: 35px;
+  }
+  .card-wrap .card .card-title, .card-wrap .card .card-descriptions {
+    color: $light-green;
+  }
+}
+/*nedree-slot end*/
 
 
 @font-face {
