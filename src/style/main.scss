@@ -170,14 +170,16 @@ body {
 .card-wrap {
   padding: 0 130px;
   display: flex;
+  flex-wrap: wrap;
 
   .card {
     display: flex;
     flex-direction: column;
     margin-right: 30px;
     flex: 1 1;
+    min-width: 30%;
 
-    &:last-child {
+    &:nth-child(3n) {
       margin-right: 0;
     }
 
@@ -202,6 +204,11 @@ body {
       font-family: $font-medium;
       font-size: 2.8rem;
       color: $dark-green;
+      .contact-info, a {
+        color: black!important;
+        font-family: $font-medium;
+        font-size: 2.5rem;
+      }
     }
   }
 }
@@ -721,6 +728,22 @@ form {
 }
 
 /*get_in_touch end*/
+
+
+
+/*about start*/
+.about {
+  .card-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 60px;
+    .card {
+      margin-right: 0;
+    }
+  }
+}
+/*about end*/
 
 
 @font-face {
