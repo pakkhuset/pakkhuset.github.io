@@ -2,19 +2,57 @@
 @import "helpers";
 
 
-.mt-1 {margin-top: 10px}
-.mt-2 {margin-top: 20px}
-.mt-3 {margin-top: 30px}
-.mt-4 {margin-top: 40px}
-.mt-5 {margin-top: 50px}
-.mt-9 {margin-top: 90px}
-.mb-1 {margin-bottom: 10px}
-.mb-2 {margin-bottom: 20px}
-.mb-3 {margin-bottom: 30px}
-.mb-4 {margin-bottom: 40px}
-.mb-5 {margin-bottom: 50px}
-.mb-19 {margin-bottom: 190px}
-.bg-white {background-color: white}
+.mt-1 {
+  margin-top: 10px
+}
+
+.mt-2 {
+  margin-top: 20px
+}
+
+.mt-3 {
+  margin-top: 30px
+}
+
+.mt-4 {
+  margin-top: 40px
+}
+
+.mt-5 {
+  margin-top: 50px
+}
+
+.mt-9 {
+  margin-top: 90px
+}
+
+.mb-1 {
+  margin-bottom: 10px
+}
+
+.mb-2 {
+  margin-bottom: 20px
+}
+
+.mb-3 {
+  margin-bottom: 30px
+}
+
+.mb-4 {
+  margin-bottom: 40px
+}
+
+.mb-5 {
+  margin-bottom: 50px
+}
+
+.mb-19 {
+  margin-bottom: 190px
+}
+
+.bg-white {
+  background-color: white
+}
 
 html {
   height: 100%;
@@ -28,6 +66,7 @@ body {
   background-color: $bg-cream;
   padding: 0 8px 8px;
   margin: 0;
+  line-height: 1;
 }
 
 .header {
@@ -38,10 +77,12 @@ body {
   background-color: $bg-cream;
   color: $dark-green;
   height: 100px;
+
   .header-banner {
     display: flex;
     align-items: center;
   }
+
   .header-logo {
     background-image: url("../static/logo_sm.png");
     height: 75px;
@@ -49,12 +90,15 @@ body {
     background-size: cover;
     margin-right: 25px;
   }
+
   .header-title {
     font-size: 4rem;
     font-family: $font-black;
   }
+
   .nav-bar {
     display: flex;
+
     &-link {
       padding-left: 35px;
       font-family: $font-medium;
@@ -71,6 +115,7 @@ body {
   background-size: cover;
   height: 800px;
   padding: 0 130px;
+
   .big-logo {
     background-image: url("../static/logo_big.png");
     width: 450px;
@@ -79,6 +124,7 @@ body {
     margin-right: 150px;
     flex-shrink: 0;
   }
+
   .welcome-text {
     font-family: $font-black;
     font-size: 8rem;
@@ -101,6 +147,7 @@ body {
   border-style: solid;
   border-width: 10.5px 0 10.5px 24px;
   border-color: transparent transparent transparent $light-green;
+
   &:before {
     position: absolute;
     content: " ";
@@ -110,9 +157,11 @@ body {
     border-style: solid;
     border-color: transparent transparent transparent white;
   }
+
   &.dark-green {
     border-color: transparent transparent transparent $dark-green;
   }
+
   &.light-green {
     border-color: transparent transparent transparent $light-green;
   }
@@ -127,23 +176,28 @@ body {
     flex-direction: column;
     margin-right: 30px;
     flex: 1 1;
+
     &:last-child {
       margin-right: 0;
     }
-    .card-img-big{
+
+    .card-img-big {
       height: 700px;
       background-size: cover;
     }
+
     .card-img {
       height: 380px;
       background-size: cover;
     }
+
     .card-title {
       text-align: center;
       font-size: 4rem;
       color: $dark-green;
       padding: 30px 0;
     }
+
     .card-descriptions {
       font-family: $font-medium;
       font-size: 2.8rem;
@@ -154,6 +208,7 @@ body {
 
 .bt-wrap {
   text-align: center;
+
   .btn {
     display: inline-block;
     padding: 25px 25px 30px;
@@ -163,6 +218,7 @@ body {
     background-color: $cream;
     box-shadow: 5px 5px $light-green;
     cursor: pointer;
+    text-decoration: none;
   }
 }
 
@@ -170,11 +226,13 @@ body {
   text-align: center;
   display: flex;
   justify-content: center;
+
   .social-icon {
     background-size: cover;
     height: 120px;
     width: 120px;
     margin-right: 80px;
+
     &:last-child {
       margin-right: 0;
     }
@@ -194,16 +252,20 @@ body {
   color: $cream;
   display: flex;
   justify-content: space-between;
+
   .footer-nav {
     display: flex;
     flex-direction: column;
-    .nav-link{
+
+    .nav-link {
       padding-bottom: 70px;
     }
   }
+
   .footer-info {
     text-align: right;
   }
+
   .footer-info-text {
     font-size: 3rem;
     font-family: $font-medium;
@@ -221,6 +283,7 @@ body {
     color: $dark-green;
     font-size: 3.5rem;
   }
+
   .card-wrap .card .card-title, .card-wrap .card .card-descriptions {
     color: $light-green;
   }
@@ -237,6 +300,7 @@ body {
 
   .event-gallery-wrap {
     padding: 0 130px;
+
     .event-gallery {
       height: 960px;
     }
@@ -255,24 +319,28 @@ body {
   display: flex;
   height: 960px;
   position: relative;
+
   .main-image {
     background-image: url("../static/events_galary1.png");
     background-size: cover;
     height: 100%;
     width: 70%;
   }
+
   .sub-images {
     margin-left: 10px;
     width: calc(30% - 10px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     .sub-image {
       height: calc(50% - 5px);
       background-size: cover;
       width: 100%;
     }
   }
+
   .see-all-btn {
     position: absolute;
     bottom: 25px;
@@ -280,6 +348,7 @@ body {
     padding: 20px 35px 25px;
     color: white;
     cursor: pointer;
+
     &:before {
       content: " ";
       background-color: white;
@@ -298,9 +367,11 @@ body {
   padding: 30px 130px;
   justify-content: space-between;
   align-items: center;
+
   &-images {
     display: flex;
     align-items: center;
+
     .image-block {
       text-align: center;
       margin-left: 70px;
@@ -309,11 +380,13 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
+
       .floor-plan-header-img {
         background-size: cover;
         width: 70px;
         height: 50px;
       }
+
       .floor-plan-header-text {
         padding-top: 10px;
         max-width: 160px;
@@ -326,36 +399,43 @@ body {
   padding: 0 130px;
   display: flex;
   justify-content: space-between;
+
   .info-blocks {
     width: 30%;
     display: flex;
     flex-direction: column;
+
     .info-block {
       padding-bottom: 40px;
       padding-top: 25px;
       border-bottom: 2px solid $bg-cream;
+
       &:last-child {
         border-bottom: none;
         padding-bottom: 0;
       }
+
       .title {
         padding-bottom: 15px;
         font-size: 4rem;
         color: $dark-green;
       }
-      .text{
+
+      .text {
         font-size: 2.8rem;
         font-family: $font-medium;
         color: black;
       }
     }
   }
+
   .floor-image {
     width: 50%;
     margin: 115px 0 150px 200px;
     background-size: cover;
     position: relative;
     text-align: center;
+
     &-text {
       font-size: 2.8rem;
       position: absolute;
@@ -375,14 +455,17 @@ body {
   > * {
     width: calc(50% - 20px);
   }
+
   .quoted-text {
     height: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
+
     > div {
       position: relative;
+
       &:before {
         position: absolute;
         left: 49%;
@@ -393,6 +476,7 @@ body {
         background-color: $bg-cream;
         transform: rotate(45deg);
       }
+
       &:after {
         position: absolute;
         left: 49%;
@@ -405,19 +489,24 @@ body {
       }
     }
   }
+
   .text {
     font-family: $font-medium;
+
     .title {
       font-family: $font-black;
     }
   }
+
   .image {
     background-size: cover;
   }
 }
+
 .border {
   padding: 0 130px;
   background-color: white;
+
   div {
     width: 100%;
     height: 2px;
@@ -425,7 +514,7 @@ body {
   }
 }
 
-.gallery-viewer{
+.gallery-viewer {
   position: fixed;
   top: 0;
   left: 0;
@@ -433,11 +522,13 @@ body {
   bottom: 0;
   padding: 100px 240px;
   background-color: rgba(0, 0, 0, 0.6);
+
   &-images {
     position: relative;
     height: 100%;
     padding: 10px;
     background-color: $cream;
+
     .close-gallery {
       position: absolute;
       top: 45px;
@@ -450,13 +541,16 @@ body {
       line-height: 0;
     }
   }
-  #jssor_1 > div:first-child  div, #jssor_1 > div:first-child  img {
-    width: 100%!important;
+
+  #jssor_1 > div:first-child div, #jssor_1 > div:first-child img {
+    width: 100% !important;
   }
+
   #jssor_1 > div:nth-last-child(-n+2) {
-    top: calc(50% - 25px)!important;
+    top: calc(50% - 25px) !important;
   }
 }
+
 .galleriet {
   .card-wrap .card .card-title, .card-wrap .card .card-descriptions {
     color: $light-green;
@@ -470,11 +564,163 @@ body {
   .floor-plan-header-images .image-block {
     margin-left: 35px;
   }
+
   .card-wrap .card .card-title, .card-wrap .card .card-descriptions {
     color: $light-green;
   }
 }
+
 /*nedree-slot end*/
+
+/*get_in_touch start*/
+form {
+  padding: 140px 200px;
+
+  .input {
+    width: 70%;
+    padding-top: 10px;
+
+    input {
+      border: 1px solid $dark-green;
+      height: 65px;
+      width: 100%;
+      padding: 5px;
+      font-size: 3.5rem;
+      border-radius: 4px;
+    }
+
+    textarea {
+      border: 1px solid $dark-green;
+      width: 100%;
+      border-radius: 4px;
+      font-size: 3rem;
+    }
+  }
+
+  .date-guests {
+    display: flex;
+
+    > div {
+      margin-right: 50px;
+    }
+
+    select {
+      border-radius: 4px;
+      border: 1px solid #707070;
+      width: 160px;
+      padding: 20px;
+      font-size: 3rem;
+      font-family: $font-medium;
+
+      &:invalid {
+        color: #ACADAC;
+      }
+
+      option {
+        color: black !important;
+      }
+    }
+  }
+
+  .checkbox {
+    font-size: 2.5rem;
+    color: $dark-green;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+
+    input {
+      width: 40px;
+      height: 40px;
+    }
+
+    input:before {
+      transition-timing-function: cubic-bezier(.075, .820, .165, 1);
+      border: 5px solid;
+      border-radius: 0;
+      background-color: white;
+      border-color: transparent;
+      box-sizing: border-box;
+      color: $dark-green;
+      content: close-quote;
+      display: inline-block;
+      height: 40px;
+      outline: 2px solid $dark-green;
+      transition-duration: .5s;
+      transition-property: background-color, border-color;
+      width: 40px;
+    }
+
+    input:checked:before {
+      background-color: $dark-green;
+      border-color: white;
+    }
+
+    span {
+      margin-left: 10px;
+    }
+
+  }
+
+  .bt-wrap .btn {
+    padding: 10px 35px;
+  }
+  .datepicker-inline .datepicker {
+    font-family: Arial;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: unset;
+    font-size: 20px;
+    width: 370px;
+
+    .datepicker--nav {
+      background-color: #E6E6E6;
+      font-size: 22px;
+      padding: 10px 5px;
+      color: black;
+    }
+
+    .datepicker--content {
+      padding-top: 0;
+    }
+
+    .datepicker--days-names {
+      background-color: #EBEBEB;
+      margin: 0;
+      padding: 15px 0;
+      color: black !important;
+
+      .datepicker--day-name {
+        color: black;
+        font-size: 20px;
+      }
+    }
+
+    .datepicker--cell {
+      height: 50px;
+    }
+
+    .datepicker--cell.-current- {
+      color: $dark-green;
+    }
+
+    .datepicker--cell.-selected- {
+      background-color: $bg-cream;
+    }
+
+    .datepicker--cells-months {
+      height: auto;
+    }
+  }
+}
+
+.gray-text {
+  font-size: 20px;
+  font-family: $font-medium;
+  color: #acadac;
+}
+
+/*get_in_touch end*/
 
 
 @font-face {
