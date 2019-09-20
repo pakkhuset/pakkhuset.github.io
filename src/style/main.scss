@@ -709,6 +709,21 @@ form {
 
 /*community end*/
 
+/*coctails start*/
+.cocktails {
+  .cocktails-info {
+    padding: 0 130px;
+    .cocktails-title {
+      display: inline-block;
+      width: 40%;
+    }
+    .cocktails-descriptions {
+      display: inline-block;
+      width: 59%;
+    }
+  }
+}
+/*coctails end*/
 
 @font-face {
   font-family: 'Sofia Pro Bold';

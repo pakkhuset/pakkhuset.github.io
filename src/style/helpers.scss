@@ -47,7 +47,7 @@
 .bg-white {background-color: white}
 .black{color: black!important;}
 .dark-green{color: $dark-green!important;}
-.cream {color: $bg-cream!important;}
+.cream {color: $cream!important;}
 .orange {color: #EF7A25!important;}
 
 a {
@@ -108,7 +108,7 @@ a {
 .jssora053:hover {opacity:.8;}
 .jssora053.jssora053dn {opacity:.5;}
 .jssora053.jssora053ds {opacity:.3;pointer-events:none;}
-#jssor_1 {
+#jssor_1, .carusel {
   width: 100%!important;
   > div:first-child {
     width: 100%!important;
@@ -124,5 +124,9 @@ a {
       }
     }
   }
+}
+
+.carusel > div:nth-last-child(-n+2) {
+  top: calc(50% - 25px) !important;
 }
 
