@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, user-scalable=no" />
+    <title>PAKKHUSET</title>
+</head>
+
+<body class="community">
+    <div class="header">
+        <a class="header-banner simple">
+            <div class="header-logo"></div>
+            <div class="header-title">PAKKHUSET</div>
+        </a>
+        <div class="nav-bar">
+            <div class="nav-bar-link"><a class="simple" href="about_us.html">ABOUT US</a></div>
+            <div class="nav-bar-link"><a class="simple" href="get_in_touch.html">GET IN TOUCH</a></div>
+            <div class="nav-bar-link"><a class="simple" href="events.html">EVENT SPACES</a></div>
+        </div>
+    </div>
+
+    <div class="top-content" style="background-image: url('./static/community_home.png')">
+        <div class="welcome-text text-center width-100">
+            COMMUNITY
+        </div>
+    </div>
+
+    <div class="community-block bg-white pt-25">
+        <div class="community-description width-600">
+            <div class="font-40 orange">START-UP HUB </div>
+            <div class="font-medium font-28 pt-5 pr-10">
+                Pakkhuset is home to several exciting start-ups, mostly in the tech industry.
+                The working community of Pakkhuset has actually been going since early 2018
+                Right now, all of our office space is occupied but feel free to <a href="get_in_touch.html" class="orange">get in touch</a> to learn more about
+                the different spaces and perhaps put yourself on the list for future openings.
+            </div>
+        </div>
+        <img class="community-img" src="./static/start_up.png"/>
+    </div>
+    <div class="community-block bg-white pt-12 pb-23">
+        <img class="community-img width-600" src="./static/working_communoty.png"/>
+        <div class="community-description">
+            <div class="font-40 orange">WORKING COMMUNITY </div>
+            <div class="font-medium font-28 pt-5 pr-10">
+                Before opening Pakkhuset we spent several months tasting all kinds of different Norwegian beers (tough life, we know!) <br/><br/>
+                Our goal is to have an interesting beer menu that represents both major beer suppliers as well as tiny micro breweries.<br/><br/>
+                We have 15 different beers on tap at all times and almost 50 bottled beers.
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-nav pt-14">
+            <a class="nav-link">AFTERWORK</a>
+            <a class="nav-link">BRUNCH</a>
+            <a class="nav-link">CHAMPAGNE BAR</a>
+            <a class="nav-link">EVENT SPACES</a>
+        </div>
+        <div class="footer-info pt-14">
+            <div class="pb-7">NEDRE SLOTTSGATE 2C</div>
+            <div >OPENING HOURS</div>
+            <div class="footer-info-text">TUESDAY-SATURDAY: 14:00-23:00</div>
+            <div class="footer-info-text">SUNDAY-MONDAY: closed</div>
+        </div>
+    </div>
+
+    <script>
+      function initMap() {
+        var oslo = {lat: 59.909594, lng: 10.740122};
+        var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 16, center: oslo});
+        var marker = new google.maps.Marker({
+          position: oslo,
+          map: map,
+          icon: "./static/logo_sm.png"
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDM17DRLHKr7lmNkYkYMivZU-Jllbqu20s &callback=initMap">
+    </script>
+</body>
