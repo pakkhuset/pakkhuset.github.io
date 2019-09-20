@@ -14,7 +14,6 @@ body {
   background-color: $bg-cream;
   padding: 0 8px 8px;
   margin: 0;
-  line-height: 1;
 }
 
 .header {
@@ -697,7 +696,6 @@ form {
   .community-block {
     padding: 0 130px;
     display: flex;
-    line-height: 1.5;
     > *:first-child {
       margin-right: 60px;
     }
@@ -709,21 +707,37 @@ form {
 
 /*community end*/
 
-/*coctails start*/
+/*coctails and craftBeer start*/
 .cocktails {
   .cocktails-info {
     padding: 0 130px;
     .cocktails-title {
       display: inline-block;
-      width: 40%;
+      width: 41%;
     }
     .cocktails-descriptions {
       display: inline-block;
-      width: 59%;
+      width: 58%;
+      vertical-align: top;
     }
   }
+  .craft-beer {
+    .text {
+     width: 40%;
+      &.text-center {
+        font-family: $font-black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .image {
+      width: 900px;
+    }
+
+  }
 }
-/*coctails end*/
+/*coctails craftBeer end*/
 
 @font-face {
   font-family: 'Sofia Pro Bold';
