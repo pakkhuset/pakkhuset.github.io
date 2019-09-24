@@ -707,7 +707,7 @@ form {
 
 /*community end*/
 
-/*coctails and craftBeer start*/
+/*coctails, craftBeer, pizza start*/
 .cocktails {
   .cocktails-info {
     padding: 0 130px;
@@ -734,7 +734,27 @@ form {
     .image {
       width: 900px;
     }
-
+    &.pizza-example {
+      height: 1100px;
+      .image {
+        width: 650px;
+      }
+      .cream.text-center{
+        font-family: $font-black;
+      }
+    }
+    .list-pizza {
+      width: calc(100% - 650px);
+      padding-left: 40px;
+    }
+    .pizza-info-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      > div {
+        width: 50%;
+      }
+    }
   }
 }
 /*coctails craftBeer end*/
