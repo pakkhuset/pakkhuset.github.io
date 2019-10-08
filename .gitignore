@@ -59,4 +59,4 @@ typings/
 .env
 
 # gitignore dist folder
-dist
+# dist
